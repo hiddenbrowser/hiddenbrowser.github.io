@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>版权声明 - Hidden Browser</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #e74c3c;
+            --bg-color: #f8f9fa;
+            --text-color: #34495e;
+            --border-radius: 8px;
+        }
+
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .license-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--bg-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .copyright {
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .owner-name {
+            font-weight: bold;
+            color: var(--primary-color);
+            display: block;
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        .license-grid {
+            display: grid;
+            gap: 20px;
+        }
+
+        .license-item {
+            padding: 20px;
+            border-left: 4px solid var(--primary-color);
+            background: #fdfdfd;
+            transition: transform 0.2s;
+        }
+
+        .license-item:hover {
+            background: #f4f7f9;
+        }
+
+        .license-item h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+            font-size: 1.1em;
+            display: flex;
+            align-items: center;
+        }
+
+        .license-item h3::before {
+            content: "✕";
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .license-item p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #555;
+        }
+
+        .footer-note {
+            margin-top: 40px;
+            font-size: 0.85em;
+            text-align: center;
+            color: #bdc3c7;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            .license-container { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="license-container">
+    <div class="header">
+        <div class="copyright">
+            Copyright © 2026 yl_lty. All rights reserved.
+        </div>
+        <div class="owner-name">
+            版权所有 © 2026 忆兰lty 。保留所有权利。
+        </div>
+    </div>
+
+    <div class="license-grid">
+        <div class="license-item">
+            <h3>禁止再分发</h3>
+            <p>不得以任何形式再分发软件。这包括但不限于重新命名、销售或将软件作为其他项目的一部分。</p>
+        </div>
+
+        <div class="license-item">
+            <h3>禁止不注明出处的摘取</h3>
+            <p>不得提取软件的任何部分、片段或组件并提交到其他项目中，除非以合适方式注明出处。这包括但不限于代码片段、函数和已发布的二进制文件。</p>
+        </div>
+
+        <div class="license-item">
+            <h3>禁止声称继承</h3>
+            <p>在许可证变更之前创建的任何软件分支均不得声称是该项目的官方或非官方继承者。这包括但不限于使用项目的名称、品牌或声誉来暗示与原项目的关联。</p>
+        </div>
+
+        <div class="license-item">
+            <h3>禁止逆向工程</h3>
+            <p>未经明确书面许可，不得对本品进行反向工程、反向编译、反汇编、提取源码或通过任何技术手段分析其核心逻辑与实现。</p>
+        </div>
+
+        <div class="license-item">
+            <h3>禁止公开源代码</h3>
+            <p>未经明确书面许可，不得公开发布、共享或分发本品的源代码。这包括但不限于在公共代码托管平台上发布、通过社交媒体分享或以任何其他方式使源代码可访问。</p>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        法律声明 · 最终解释权归 忆兰lty 所有
+    </div>
+</div>
+
+</body>
+</html>
