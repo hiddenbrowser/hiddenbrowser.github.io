@@ -3,20 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="一款高便携浏览器，在老师 / 老板的监视下隐形。">
+    <meta name="keywords" content="Hidden Browser,希沃管家,360,学校,电教委,隐形浏览器,便携浏览器,窗口捕获隐藏,隐私安全,站点锁,跨设备迁移">
     <title>Hidden Browser</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <style>
+        :root {
+            --accent: #2563eb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "PingFang SC",
+                         "Microsoft YaHei", sans-serif;
+            color: #111;
+            line-height: 1.6;
+        }
+
+        /* 顶栏 */
+        header {
+            position: sticky;
+            top: 0;
+            background: rgba(255,255,255,0.9);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eee;
+            z-index: 1000;
+        }
+
+        .nav {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 20px;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: bold;
+        }
+
+        .nav-left img {
+            width: 32px;
+        }
+
+        .nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .nav a:hover {
+            color: var(--accent);
+        }
+
+        /* 通用 section */
+        section {
+            padding: 80px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #444;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 10px;
+        }
+
+        /* Hero */
+        .hero {
+            text-align: center;
+            background: #000;
+            color: #fff;
+        }
+
+        .hero p {
+            color: #ccc;
+        }
+
+        .hero img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+
+        /* 深浅分区 */
+        .light {
+            background: #f5f5f5;
+        }
+
+        .dark {
+            background: #111;
+            color: #fff;
+        }
+
+        .dark p {
+            color: #bbb;
+        }
+
+        /* 内容布局 */
+        .feature {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .feature img {
+            width: 100px;
+        }
+
+        .feature-text {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        /* 按钮 */
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 26px;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background: #1e4fd1;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #000;
+            color: #aaa;
+        }
+
+        footer a {
+            color: #ccc;
+            margin: 0 10px;
+        }
+
+        /* 移动端 */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+
+            h2 {
+                font-size: 24px;
+            }
+
+            .feature {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <img src="/res/logo.webp" alt="Hidden Browser Logo" style="width: 150px; height: auto;">
-    <h1>Hidden Browser</h1>
-    <p>一款高便携浏览器，在老师/老板的监视下隐形。</p>
-    <p>A high-portability browser, Invisible under the surveillance of teacher/boss.</p>
-    <p>此应用尚在开发，敬请期待。预计发布时间为 2026.5.3 </p>
-    <ul>
-        <li><a href="/open-source-license" target="_blank">开源许可证</a></li>
-        <li><a href="/copyright" target="_blank">版权声明</a></li>
-        <li><a href="/support" target="_blank">帮助/支持中心</a></li>
-        <li><a href="/donate" target="_blank">获取赞助版本</a></li>
-    </ul>
+
+<!-- 顶栏 -->
+<header>
+    <div class="nav">
+        <div class="nav-left">
+            <img src="https://hiddenbrowser.github.io/res/logo.webp">
+            Hidden Browser
+        </div>
+        <div>
+            <a href="/support">帮助中心</a>
+            <a href="/support/download">下载</a>
+            <a href="/donate">赞助版</a>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <img src="https://hiddenbrowser.github.io/res/logo.webp">
+        <h1>Hidden Browser</h1>
+        <p>一款高便携浏览器，在老师 / 老板的监视下隐形。</p>
+        <p>A high-portability browser, invisible under surveillance.</p>
+
+        <a href="/support/download" class="btn">立即下载</a>
+    </div>
+</section>
+
+<!-- 功能 1 -->
+<section class="light">
+    <div class="container feature">
+        <img src="https://hiddenbrowser.github.io/res/hidden.webp">
+        <div class="feature-text">
+            <h2>窗口捕获隐藏</h2>
+            <p>通过技术手段，使窗口在录屏、监控、远程捕获中不可见，同时不干扰监控进程，避免异常行为被发现。</p>
+            <p>已验证：</p>
+            <ul>
+                <li>希沃管家</li>
+                <li>360 安全云</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- 功能 2 -->
+<section class="dark">
+    <div class="container feature">
+        <img src="https://hiddenbrowser.github.io/res/portability.webp">
+        <div class="feature-text">
+            <h2>高便携性</h2>
+            <p>完整复制文件即可迁移登录状态，实现跨设备使用。</p>
+            <p>支持站点锁，避免公共设备滥用账号。</p>
+
+            <p>兼容性覆盖：</p>
+            <ul>
+                <li>bilibili / 抖音 / Outlook</li>
+                <li>ChatGPT / Gemini / 豆包</li>
+            </ul>
+
+            <p>系统支持：</p>
+            <ul>
+                <li>Windows 7 / 10</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- 功能 3 -->
+<section class="light">
+    <div class="container feature">
+        <img src="https://hiddenbrowser.github.io/res/privacy.webp">
+        <div class="feature-text">
+            <h2>隐私安全</h2>
+            <p>采用 AES-256 加密 Cookie，结合启动密码与站点锁机制，保障数据安全。</p>
+        </div>
+    </div>
+</section>
+
+<!-- 底部下载 -->
+<section class="dark" style="text-align:center;">
+    <div class="container">
+        <h2>立即开始使用</h2>
+        <a href="/support/download" class="btn">下载 Hidden Browser</a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>
+        <a href="/copyright">版权声明</a> |
+        <a href="/open-source-license">开源许可证</a> |
+        <a href="/support/about">联系开发者</a>
+    </p>
+    <p>Copyright © 2026 yl_lty</p>
+    <p>Hosted on GitHub Pages</p>
+</footer>
+
 </body>
 </html>
