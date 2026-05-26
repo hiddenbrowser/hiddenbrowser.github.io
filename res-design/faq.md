@@ -1,6 +1,6 @@
 # 常见问题解答 FAQ
 
-如果你遇到问题，且通过此页面中的指引未能解决，请在 [GitHub](https://github.com/hiddenbrowser/hiddenbrowser.github.io/issues) 反馈。如果 GitHub 不可行，请在[哔哩哔哩介绍视频]()中发送评论并描述详细问题(建议)，或者发送邮件至 yl_lty@outlook.com 。典型的问题将会被收录在此处。
+如果你遇到问题，且通过此页面中的指引未能解决，请在 [GitHub](https://github.com/hiddenbrowser/hiddenbrowser.github.io/issues) 反馈。如果 GitHub 不可行，请在[哔哩哔哩介绍视频](https://www.bilibili.com/video/BV1ywR5BSExh/)中发送评论并描述详细问题(建议)，或者发送邮件至 yl_lty@outlook.com 。典型的问题将会被收录在此处。
 
 
 
